@@ -19,7 +19,7 @@ class Platform(pg.sprite.Sprite):
         if color == None:
             self.image = pg.Surface((PLATFORM_WIDTH, PLATFORM_HEIGHT), pg.SRCALPHA)
         else:
-            self.image = pg.image.load('data/platform1.png').convert_alpha(self.image)
+            self.image = pg.image.load('data/platforms/platform1.png').convert_alpha(self.image)
             self.image = pg.transform.scale(self.image, (PLATFORM_WIDTH, PLATFORM_HEIGHT))
         self.rect = self.image.get_rect(center=(x, y))
         self.shift = 0
@@ -60,7 +60,7 @@ class ThinPlatform(Platform):
         if color == None:
             self.image = pg.Surface((PLATFORM_WIDTH, PLATFORM_HEIGHT - 40))
         else:
-            self.image = pg.image.load('data/platform2.png').convert_alpha()
+            self.image = pg.image.load('data/platforms/platform2.png').convert_alpha()
             self.image = pg.transform.scale(self.image, (PLATFORM_WIDTH, PLATFORM_HEIGHT - 40))
         self.rect = self.image.get_rect(center=(x, y))
         self.shift = 0
@@ -73,7 +73,7 @@ class SmallPlatform(Platform):
         if color == None:
             self.image = pg.Surface((SMALLPLATFORM_WIDTH, SMALLPLATFORM_HEIGHT))
         else:
-            self.image = pg.image.load('data/platform3.png').convert_alpha()
+            self.image = pg.image.load('data/platforms/platform3.png').convert_alpha()
             self.image = pg.transform.scale(self.image, (SMALLPLATFORM_WIDTH, SMALLPLATFORM_HEIGHT))
         self.rect = self.image.get_rect(center=(x, y))
         self.shift = 0

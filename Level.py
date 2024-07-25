@@ -1,13 +1,14 @@
 from ENEMY import *
 from PLAYER import *
-from map import *
+from BACKGROUND import *
 from PLATFORMS import *
 
 
-def start(screen):
-    game = True
-    menu = False
-    last_direction = 0
+def start(screen, music_play):
+    if music_play:
+        pg.mixer.music.load('data/musics/gurenge_8_bit.mp3')
+        pg.mixer.music.play(-1, 0.0)
+        pg.mixer.music.set_volume(0.4)
     background = Map(screen)
     GROUND = Ground()
     gplatforms = [
@@ -55,4 +56,4 @@ def start(screen):
     player = Player(screen)
     gorizontal_platforms = pg.sprite.Group(gplatforms)
     died_mas = []
-    return game, menu, background, gplatforms, gorizontal_platforms, player, enemies, GROUND, died_mas
+    return background, gplatforms, gorizontal_platforms, player, enemies, GROUND, died_mas
