@@ -25,15 +25,15 @@ def img_convert_slash(*imgs):
     return sp
 
 
-def demon1_convert(*imgs):
+def demon2_convert(*imgs):
     sp = []
     for img in imgs:
-        img = pg.transform.scale(img, (SIZE.current_w * 0.015, SIZE.current_h * 0.09))
+        img = pg.transform.scale(img, (SIZE.current_w * 0.05, SIZE.current_h * 0.09))
         sp.append(img)
     return sp
 
 
-def demon1_died_convert(*imgs):
+def demon2_died_convert(*imgs):
     sp = []
     for img in imgs:
         img = pg.transform.scale(img, (SIZE.current_w * 0.045, SIZE.current_h * 0.09))

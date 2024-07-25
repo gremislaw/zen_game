@@ -13,56 +13,56 @@ class Enemy(pg.sprite.Sprite):
         self.type = type
         self.direction = pg.math.Vector2(0, 0)
         if self.type == 'normal1':
-            self.speed = 4
-            self.move_image = demon1_convert(
-                pg.image.load('data/demon.png').convert_alpha(screen),
-                pg.image.load('data/demon2.png').convert_alpha(screen)
+            self.speed = int(SIZE.current_w * 0.0021)
+            self.move_image = demon2_convert(
+                pg.image.load('data/demon2/demon.png').convert_alpha(screen),
+                pg.image.load('data/demon2/demon2.png').convert_alpha(screen)
             )
-            self.died_image = demon1_died_convert(
-                pg.image.load('data/demon_died.png').convert_alpha(),
-                pg.image.load('data/demon_died2.png').convert_alpha(),
-                pg.image.load('data/demon_died3.png').convert_alpha(),
-                pg.image.load('data/demon_died4.png').convert_alpha(),
-                pg.image.load('data/demon_died5.png').convert_alpha(),
-                pg.image.load('data/demon_died6.png').convert_alpha(),
-                pg.image.load('data/demon_died7.png').convert_alpha(),
-                pg.image.load('data/demon_died8.png').convert_alpha(),
-                pg.image.load('data/demon_died9.png').convert_alpha(),
-                pg.image.load('data/demon_died10.png').convert_alpha(),
-                pg.image.load('data/demon_died11.png').convert_alpha(),
-                pg.image.load('data/demon_died12.png').convert_alpha(),
-                pg.image.load('data/demon_died13.png').convert_alpha(),
-                pg.image.load('data/demon_died14.png').convert_alpha(),
-                pg.image.load('data/demon_died15.png').convert_alpha(),
-                pg.image.load('data/demon_died16.png').convert_alpha(),
-                pg.image.load('data/demon_died17.png').convert_alpha(),
-                pg.image.load('data/demon_died18.png').convert_alpha()
+            self.died_image = demon2_died_convert(
+                pg.image.load('data/demon2/demon_died.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died2.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died3.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died4.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died5.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died6.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died7.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died8.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died9.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died10.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died11.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died12.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died13.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died14.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died15.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died16.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died17.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died18.png').convert_alpha()
             )
         elif self.type == 'normal2':
-            self.speed = 2
-            self.move_image = demon1_convert(
-                pg.image.load('data/demon.png').convert_alpha(screen),
-                pg.image.load('data/demon2.png').convert_alpha(screen)
+            self.speed = int(SIZE.current_w * 0.00105)
+            self.move_image = demon2_convert(
+                pg.image.load('data/demon2/demon.png').convert_alpha(screen),
+                pg.image.load('data/demon2/demon2.png').convert_alpha(screen)
             )
-            self.died_image = demon1_died_convert(
-                pg.image.load('data/demon_died.png').convert_alpha(),
-                pg.image.load('data/demon_died2.png').convert_alpha(),
-                pg.image.load('data/demon_died3.png').convert_alpha(),
-                pg.image.load('data/demon_died4.png').convert_alpha(),
-                pg.image.load('data/demon_died5.png').convert_alpha(),
-                pg.image.load('data/demon_died6.png').convert_alpha(),
-                pg.image.load('data/demon_died7.png').convert_alpha(),
-                pg.image.load('data/demon_died8.png').convert_alpha(),
-                pg.image.load('data/demon_died9.png').convert_alpha(),
-                pg.image.load('data/demon_died10.png').convert_alpha(),
-                pg.image.load('data/demon_died11.png').convert_alpha(),
-                pg.image.load('data/demon_died12.png').convert_alpha(),
-                pg.image.load('data/demon_died13.png').convert_alpha(),
-                pg.image.load('data/demon_died14.png').convert_alpha(),
-                pg.image.load('data/demon_died15.png').convert_alpha(),
-                pg.image.load('data/demon_died16.png').convert_alpha(),
-                pg.image.load('data/demon_died17.png').convert_alpha(),
-                pg.image.load('data/demon_died18.png').convert_alpha()
+            self.died_image = demon2_died_convert(
+                pg.image.load('data/demon2/demon_died.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died2.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died3.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died4.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died5.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died6.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died7.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died8.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died9.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died10.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died11.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died12.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died13.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died14.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died15.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died16.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died17.png').convert_alpha(),
+                pg.image.load('data/demon2/demon_died18.png').convert_alpha()
             )
         self.rect = self.move_image[0].get_rect()
         self.rect.midbottom = x, y
